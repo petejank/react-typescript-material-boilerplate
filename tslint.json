@@ -1,0 +1,22 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["dist/**/*", "coverage/**/*"]
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false
+  },
+  "rules": {
+    "adjacent-overload-signatures": true,
+    "array-type": ["array", true],
+    "arrow-parens": ["ban-single-arg-parens", false],
+    "curly": false,
+    "forin": false,
+    "interface-over-type-literal": false,
+    "no-shadowed-variable": false,
+    "no-unused-variable": true,
+    "jsx-boolean-value": ["never", true],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false
+  }
+}
