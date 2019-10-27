@@ -1,6 +1,7 @@
 {
   "name": "react-typescript-material-boilerplate",
   "version": "1.0.0",
+  "author": "Piotr Jankowski",
   "main": "src/index.tsx",
   "engines": {
     "node": ">= 10.0.0",
