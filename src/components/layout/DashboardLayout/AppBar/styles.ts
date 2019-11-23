@@ -4,7 +4,7 @@ import {sideBarWidth} from '../styles'
 
 export default makeStyles((theme) => ({
   wrapper: {
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
       marginLeft: sideBarWidth,
       width: `calc(100% - ${sideBarWidth}px)`
     }
