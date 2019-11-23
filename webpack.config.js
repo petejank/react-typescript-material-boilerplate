@@ -92,18 +92,11 @@ module.exports = {
     path: path.resolve('./dist')
   },
   optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        parallel: true,
-        sourceMap: true,
-        uglifyOptions: {
-          output: {
-            comments: false
-          },
-          warnings: false
-        }
-      })
-    ]
+    minimize: true,
+    minimizer: [new TerserPlugin({
+      sourceMap: true,
+      extractComments: true
+    })]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
