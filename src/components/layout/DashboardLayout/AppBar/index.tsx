@@ -42,7 +42,7 @@ const AppBar = ({toggleMobileSidebar}: Props) => {
 
   return (
     <MuiAppBar className={classes.wrapper} position="absolute">
-      <Container padded={false}>
+      <Container padded={false} component="div">
         <Toolbar className={classes.toolbar}>
           <div className={classes.toolbarLeft}>
             <Hidden mdUp>
