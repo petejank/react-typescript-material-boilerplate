@@ -18,7 +18,7 @@ module.exports = {
     overlay: true,
     stats: 'minimal'
   },
-  devtool: isProduction ? 'eval-source-map' : 'inline-source-map',
+  devtool: isProduction ? 'source-map' : 'eval-source-map',
   entry: './src/index',
   mode: process.env.NODE_ENV,
   module: {
