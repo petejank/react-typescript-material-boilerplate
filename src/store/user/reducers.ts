@@ -1,5 +1,4 @@
 import * as actions from './actions'
-import * as userStorage from 'utils/userStorage'
 import {UserStateType, RemoveActionType, SetActionType} from './types'
 
 const defaultState = {
@@ -14,8 +13,6 @@ export default (state: UserStateType = defaultState, action: RemoveActionType | 
         ...action.user
       }
     case actions.USER_REMOVE:
-      userStorage.clear()
-
       return {
         ...defaultState
       }

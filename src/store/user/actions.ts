@@ -1,5 +1,7 @@
+import * as userStorage from 'utils/userStorage'
 import {UserType} from 'types/user'
-import {SetActionType, RemoveActionType} from './types'
+import {SetActionType} from './types'
+import {ThunkResultType} from 'store/types'
 
 export const USER_SET = 'USER:SET'
 export const USER_REMOVE = 'USER:REMOVE'
@@ -11,8 +13,9 @@ export function set(user: UserType): SetActionType {
   }
 }
 
-export function remove(): RemoveActionType {
-  return {
-    type: USER_REMOVE
+export function remove(): ThunkResultType<void> {
+  return (dispatch) => {
+    dispatch({type: USER_REMOVE})
+    userStorage.clear()
   }
 }
