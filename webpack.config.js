@@ -93,10 +93,12 @@ module.exports = {
   },
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin({
-      sourceMap: true,
-      extractComments: true
-    })]
+    minimizer: [
+      new TerserPlugin({
+        sourceMap: true,
+        extractComments: true
+      })
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
