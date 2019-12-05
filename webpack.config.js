@@ -92,7 +92,6 @@ module.exports = {
     path: path.resolve('./dist')
   },
   optimization: {
-    minimize: true,
     minimizer: [
       new TerserPlugin({
         sourceMap: true,
