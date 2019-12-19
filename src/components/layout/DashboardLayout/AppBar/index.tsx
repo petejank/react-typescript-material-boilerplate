@@ -45,7 +45,7 @@ const AppBar = ({toggleMobileSidebar}: Props) => {
       <Container padded={false} component="div">
         <Toolbar className={classes.toolbar}>
           <div className={classes.toolbarLeft}>
-            <Hidden mdUp>
+            <Hidden lgUp>
               <IconButton color="inherit" onClick={toggleMobileSidebar}>
                 <Icon type="Menu" />
               </IconButton>

@@ -54,7 +54,7 @@ const SideBar = ({mobileOpen, toggleMobileSidebar}: Props) => {
 
   return (
     <Fragment>
-      <Hidden mdUp>
+      <Hidden lgUp>
         <Drawer
           variant="temporary"
           anchor="left"
